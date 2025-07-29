@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>UHC Member Portal - Activate, Sign In & Manage Your Health Card</title>
+<meta name="description" content="Access and manage your UHC Health Card easily. Sign in, register, activate benefits, track your balance, and get help in one place."/>
+<meta name="keywords" content="UHC, UCard, UnitedHealthcare, health card login, activate UHC card, register UHC, OTC benefits, sign in healthcare"/>
+<meta name="author" content="UHC Team"/>
+<meta property="og:title" content="UHC Member Portal - Sign In & Manage Your Health Card"/>
+<meta property="og:description" content="Securely sign in or register to activate and manage your UHC Health Card. Check balances, view benefits, and more."/>
+<meta property="og:image" content="logo.png"/>
+<meta property="og:type" content="website"/>
+
+
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-banner {
+    background-color: #004785;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .top-banner img {
+    height: 28px;
+    margin-right: 10px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to right, #004785, #0077b6);
+    color: white;
+  }
+
+  .hero img {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 12px;
+  }
+
+  .hero-text {
+    flex: 1;
+    padding-left: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .hero-text a.button {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+
+  .main {
+    display: flex;
+    flex: 1;
+  }
+
+  .sidebar {
+    width: 240px;
+    background-color: #003366;
+    color: white;
+    height: 100%;
+    position: sticky;
+    top: 60px;
+    padding: 20px;
+    flex-shrink: 0;
+  }
+
+  .sidebar h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+
+  .sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-left: 4px solid transparent;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+  }
+
+  .sidebar a:hover {
+    background-color: #00509e;
+    border-left: 4px solid #ffcc00;
+  }
+
+  .content {
+    flex: 1;
+    padding: 30px 40px;
+    max-width: 1000px;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .card h2 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .card ul, .card ol {
+    padding-left: 20px;
+  }
+
+  a {
+    color: #007bff;
+  }
+
+  .visual-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .main { flex-direction: column; }
+    .sidebar { width: 100%; position: relative; }
+    .content { padding: 20px; }
+    .hero { flex-direction: column; padding: 20px; }
+    .hero img { width: 100%; margin-bottom: 20px; }
+    .hero-text { padding-left: 0; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-banner">
+  <img src="uhc-logo.png" alt="UHC" />
+  UHC Member Portal
+</div>
+
+<div class="hero">
+  <img src="uhc-dashboard.jpg" alt="UHC Dashboard" />
+  <div class="hero-text">
+    <h1>Welcome to Your UHC Member Dashboard</h1>
+    <p>Sign in or register to activate your card, view benefits, check balances, and more.</p>
+    <a href="https://activate.uhc.com" class="button">Activate UCard</a>
+  </div>
+</div>
+
+<div class="main">
+  <nav class="sidebar">
+    <h2>Navigation</h2>
+    <a href="#overview">Overview</a>
+    <a href="#register">Register</a>
+    <a href="#signin">Sign In</a>
+    <a href="#features">Benefits</a>
+    <a href="#activate">Card Activation</a>
+    <a href="#faq">FAQs</a>
+    <a href="#support">Support</a>
+  </nav>
+
+  <div class="content">
+    <div id="overview" class="card">
+      <h2>About UHC Portal</h2>
+      <p>The UHC Member Portal is your one-stop solution to manage your health benefits, track OTC balance, locate providers, and monitor your healthcare usage—all from one secure dashboard.</p>
+    </div>
+
+    <div id="register" class="card">
+      <h2>How to Register</h2>
+      <ol>
+        <li>Visit <a href="https://activate.uhc.com">activate.uhc.com</a></li>
+        <li>Click "Register Now"</li>
+        <li>Enter your Member ID, ZIP Code, and DOB</li>
+        <li>Create your login credentials</li>
+        <li>Set up security questions and verification</li>
+      </ol>
+    </div>
+
+    <div id="signin" class="card">
+      <h2>How to Sign In</h2>
+      <p>Go to <a href="https://activate.uhc.com">activate.uhc.com</a> and click "Sign In". Enter your registered email and password to access your account dashboard.</p>
+    </div>
+
+    <div id="features" class="card">
+      <h2>UCard Benefits</h2>
+      <ul>
+        <li>Check OTC and utility benefit balance</li>
+        <li>Use as a digital ID at clinics and hospitals</li>
+        <li>Track health coverage and plan details</li>
+        <li>Find in-network providers and pharmacies</li>
+      </ul>
+    </div>
+
+    <div id="activate" class="card">
+      <h2>Card Activation Steps</h2>
+      <ol>
+        <li>Visit <a href="https://activate.uhc.com">activate.uhc.com</a></li>
+        <li>Log in or register</li>
+        <li>Click "Activate UCard"</li>
+        <li>Follow on-screen instructions to complete activation</li>
+      </ol>
+    </div>
+
+    <div id="faq" class="card">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li>How do I recover my password?</li>
+        <li>Where can I use my UCard?</li>
+        <li>How to check my benefit balance?</li>
+        <li>Can I use the card at Walmart or CVS?</li>
+      </ul>
+    </div>
+
+    <div id="support" class="card">
+      <h2>Need Help?</h2>
+      <p>For support, visit the <a href="https://www.uhc.com/member-resources">UHC Member Resources</a> page or call the number on the back of your card for personalized help.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
